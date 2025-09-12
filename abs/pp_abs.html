@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Power converters - Andrea Prozzo</title>
+  <title>I miei Progetti - Andrea Prozzo</title>
   <link rel="stylesheet" href="../style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
- <!-- NAVBAR -->
+<!-- NAVBAR -->
 <header>
   <nav class="navbar">
     <!-- Sinistra -->
     <ul class="nav-left">
 		<li><a href="../pages/intro.html">What about me?</a></li>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../pages/progetti.html">Projects</a></li>
+      <li><a href="../index.html#progetti">Projects</a></li>
     </ul>
 
     <!-- Centro -->
@@ -57,44 +55,47 @@
     <ul class="nav-right">
       <li><a href="../index.html#cv">Curriculum</a></li>
       <li><a href="../index.html#contatti">Contacts</a></li>
-	  <li><a href="../pages/funzone.html">Fun Zone</a></li>
+	  <li><a href="../index.html#home">Fun Zone</a></li>
     </ul>
   </nav>
 </header>
 
-  <!-- CONTENUTO PROGETTO -->
+
+  <!-- ABSTRACT SECTION -->
 <section class="section">
-  <div class="container project-container">
-    <h1>Data Analysis and Machine Learning - Python</h1>
-    <div class="project-box light">
-      <h3>Classification and regression on financial data</h3>
-      <p style="margin-bottom: 20px">Application of several ML methodologies in order to classify a loan approval or deny starting from financial and demographic data. Regression methodologies in order to define a risk score for each costumer.</p>
-      <a href="../abs/pc2_abs.html" download class="btn2">See abstract</a>
-      <a href="mailto:and.prozzo@gmail.com?subject=Info" class="btn2">More info</a>    
-	</div>
-	
-	<div class="project-box light">
-      <h3>Heart desease prediction and classification</h3>
-      <p style="margin-bottom: 20px">
-      <p style="margin-bottom: 20px">Decision trees, SVM and other supervised learning methodolgies in order to evaluate the risk of develop an heart desease.</p>
-      <a href="../abs/pc2_abs.html" class="btn2">See abstract</a>
-      <a href="mailto:and.prozzo@gmail.com?subject=Info" class="btn2">More info</a>    
-	</div>
-    
-
-    
-    
-    
-      <!-- Pulsanti moderni -->
-
-    
-    
+  <div class="container abstract-box">
+    <h2>Abstract – Pick and place in SSM</h2>
+    <p>
+      This project simulates a robotic <strong>pick-and-place</strong> operation in a 
+      <span class="highlight">collaborative workspace</span> using <span class="highlight">ABB RobotStudio</span>. 
+      An industrial robot equipped with a <span class="highlight">smart gripper</span> transfers six 4×4×4 cm cubes 
+      from a linear layout on a primary table to a 3×2 grid on a secondary table.
+    </p>
+    <p>
+      The routine is organized around predefined target configurations (pick, pre-pick, place, pre-place, home, intermediate) 
+      to ensure repeatable and safe motions. Grasp and release are driven via <strong>digital I/O and 
+      smart components</strong> (sensors, attacher/detacher, logic flip-flops), realistically emulating the gripper’s behavior. 
+      A homing sequence and an inverse routine are included to reset the scene.
+    </p>
+    <p>
+      Human–robot collaboration is enabled through <span class="highlight">Speed and Separation Monitoring (SSM)</span>: 
+      volumetric sensors define yellow and red zones, causing the robot to slow to 0.2 m/s or stop, respectively. 
+      Under ideal, uninterrupted conditions, the full cycle completes in under 60 seconds, while SSM ensures safe interaction.
+    </p>
+    <a href="mailto:and.prozzo@gmail.com?subject=InfoRoboticsProject" class="btn2" style="margin-top: 20px">More info</a>
   </div>
 </section>
 
+
+
+
+
+
+
+
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 Andrea Prozzo | <a href="mailto:and.prozzo@gmail.com">Contact me</a></p>
+    <p>© 2025 Andrea Prozzo | <a href="mailto:and.prozzo@gmail.com?">Contact me</a></p>
   </footer>
 </body>
 </html>

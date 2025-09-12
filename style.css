@@ -335,7 +335,7 @@ footer a {
 
 /* Alternanza chiaro / scuro */
 .project-box.light {
-  background: #f2f2f2; /* chiaro */
+  background: #fff; /* chiaro */
   color: #111;
 }
 .project-box.dark {
@@ -402,8 +402,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 21px;
+  margin-left: 21px;
 }
 
 .logo {
@@ -465,7 +465,7 @@ header {
 .nav-right li a:hover::before,
 .nav-right li a:hover::after {
   background: #fff;
-  box-shadow: 0 0 6px #f9ff00;
+  box-shadow: 0 0 0px #e6e6e6;
 }
 
 /* Sezione hero con immagine di sfondo */
@@ -535,4 +535,153 @@ header {
   opacity: 1;
   box-shadow: 0 0 18px rgba(0, 191, 255, 0.5);
 }
+
+/* Griglia progetti */
+.project-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+  
+}
+
+/* Box progetto chiaro */
+.project-box1 {
+  background-color: #fff; /* box chiaro */
+  color: #000;               /* testo principale */
+  text-decoration: none;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  min-height: 200px;         /* altezza minima */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* ombra leggera */
+  border: 2px solid transparent;         /* bordo inizialmente invisibile */
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+.projects-section {
+  background: url("img/rete.jpg") no-repeat center center/cover;
+  position: relative;
+  height: 120vh; /* tutta la schermata */
+  
+
+}
+
+
+/* Titolo dentro il box */
+.project-box1 h3 {
+  color: dimgray; /* leggermente più scuro */
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* Hover solo bordo blu elettrico */
+.project-box1:hover {
+  transform: translateY(-20px) rotate(-1deg);
+  box-shadow: 0 8px 20px rgba(0,191,255,0.4);
+  border: 2px solid #00bfff;
+}
+
+/* Sezione con sfondo */
+.funzone-section {
+  background: url("img/fun.jpg") no-repeat center center/cover;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Titoli */
+.funzone-title {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #fff;
+  
+}
+
+.funzone-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: fff;
+}
+
+/* Griglia */
+.fun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Box chiari */
+.fun-item {
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.fun-item h3 {
+  color: dimgray;
+  margin-bottom: 12px;
+}
+
+.fun-item p {
+  color: #333;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Hover “simpatico” */
+.fun-item:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: 0 8px 20px rgba(0,191,255,0.4);
+  border: 3px solid #f9ff00;
+}
+
+/* Contenitore faccia del dado */
+.dice-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 200px; /* per mantenere proporzioni */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 16px;
+}
+
+/* Pallini del dado */
+.dot {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Contenitore del dado */
+.dice-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 16px;
+  flex-direction: column; /* così possiamo aggiungere il bottone dentro */
+}
+
+
+
 

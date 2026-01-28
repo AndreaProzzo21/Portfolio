@@ -71,6 +71,3 @@ Feel free to explore and get inspiration from it.
 
 ```
 
-
-If you tell me the name of your repo (and whether it is deployed on GitHub Pages), I can personalize the README with the exact correct links and layout.
-```

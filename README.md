@@ -13,15 +13,10 @@ The website is designed to be simple, clean, and easy to navigate.
 
 ---
 
-## 🚀 Live Preview
+## 🌍 Live Website
 
-To view the portfolio locally, simply open:
-
-```bash
-index.html
-````
-
-in your browser.
+You can view the portfolio here:  
+👉 https://AndreaProzzo21.github.io/Portfolio/
 
 ---
 
